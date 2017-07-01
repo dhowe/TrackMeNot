@@ -56,13 +56,8 @@ TrackMeNot?</a>
 <li><a href="#upgrade" class=question>How do I upgrade to the
 current version of TrackMeNot?</a>
 
-<li><a href="#remove" class=question>How do I remove
-TrackMeNot?</a>
-
-<li><a href="#options" class=question>Can you help me understand all the
-different TMN Options?</a>
-
-<li><a href="#features" class=question>Can you help me understand the new TMN features in version 'X'?</a>
+<li><a href="#options" class=question>Can you help me understand the
+various TMN options/features?</a>
 
 <li><a href="#freq" class=question>Can I control the rate at
 which TMN sends queries? </a>
@@ -80,12 +75,8 @@ queries?</a>
 <li><a href="#identity" class=question>Can effectively TMN hide my
 identity?</a>
 
-<li><a href="#mining" class=question>Can TMN prevent mining
-and profiling of my searches?</a>
-
 <li><a href="#history" class=question>Isn't it a good thing
-that search companies keep track of my search
-history?</a>
+that search companies keep track of my search history?</a>
 
 <li><a href="#control" class=question>Why is TMN so concerned
 with keeping control in the hands of individual users; as opposed to other
@@ -101,10 +92,8 @@ deployment of TMN eventually 'clog' the search
 engines it queries? </a>
 
 <li><a href="#click" class=question>Does TMN ever simulate
-click-throughs on links that come up from "fake"
-searches. If not, why not? Further, couldn't a search engine just look at any
-searches for which a result is clicked on and know that these are the 'real'
-searches? </a>
+click-throughs on links that come up from its generated
+queries? </a>
 
 <li><a href="#guarantee" class=question>What kind of guarantees
 can TMN make regarding its effectiveness at
@@ -117,12 +106,10 @@ could defeat TMN, how would you even know? </a>
 <li><a href="#random" class=question>How random is TMN's
 random timing mechanism. Isn't it likely that a search
 engine (using the massive amount of user data they've already collected) could
-distinguish 'any' random mechanism from real user search behavior? </a>
+distinguish 'any' random mechanism from real search behavior? </a>
 
 <li><a href="#ddos" class=question>How is this different than a (Distributed) Denial
-of Service attack or spamware? </a>
-
-<li><a href="#clickfraud" class=question>Does the selective click-through feature contribute to advertising "click-fraud"? </a>
+of Service (DDoS) attack or spamware? </a>
 
 <li><a href="#response" class=question>How have the search
 engine companies responded to this project? </a>
@@ -132,12 +119,10 @@ review that said TrackMeNot doesn't work; is he
 right? </a>
 
 <li><a href="#browsers" class=question>I would love to use
-TrackMeNot; why doesn't it work with browsers other
-than Firefox? </a>
+TrackMeNot; why doesn't it work with browser X? </a>
 
 <li><a href="#lang" class=question>I would love to use
-TrackMeNot; why doesn't it work for languages besides
-English? </a>
+TrackMeNot; why doesn't it work for language X? </a>
 
 <li><a href="#tor" class=question>There are several
 projects that claim to protect privacy in web search
@@ -149,29 +134,23 @@ Google sends me to a 'sorry' page and tells me that it suspects my machine of
 being infected with spyware or a virus, and even prompts me for a captcha when
 I try to search. Did the search engine detect TrackMeNot?</a>
 
-<li><a href="#sourcequeries" class=question>
-Where does TrackMeNot get its queries from?</a>
-
-
 <li><a href="#stealthandtabmodes" class=question>
 What is the difference between stealth and tab modes?</a>
 
-
 <li><a href="#burst" class=question>
-What is burst mode?</a>
+What is TMN's 'burst mode'?</a>
 
 <li><a href="#evolve" class=question>
 How does the query set 'evolve' over time?</a>
 
 <li><a href="#newsearchengine" class=question>
-How do I add a new search engine?</a>
+How do I add a new search engine to TMN's list?</a>
 
 <li><a href="#dhs" class=question>
 What does 'keywords monitored by DHS' mean?</a>
 
-
 <li><a href="#blacklist" class=question>
-What is the blacklist?
+What if I don't want certain words to ever be searched? What is TMN's 'blacklist' ?
 </ul>
 </TD>
 <!-- right margin -->
@@ -195,58 +174,33 @@ What is the blacklist?
 
 <a name="install"></a>
 <h2>How do I install TrackMeNot?</h2>
-<ul><li><a href="http://www.mozilla.com/firefox/" targer=_blank
-class=regLink>Install or upgrade Firefox</a> if necessary - TMN runs in
-version 1.5 or
-greater.
-<li>Click the 'Install TrackMeNot' link
-<li>Click 'Install' in the dialog, (you may need to instruct Firefox to
-accept downloads from mrl.nyu.edu; then Restart Firefox.
-<li>You should now see the TMN icon in the status bar (bottom right-hand
-corner of the browser window). It will indicate "Off".
-<li>To start TMN, click 'TrackMeNot' in the Firefox 'Tools' menu. This will
-change TMN's status to "On". After a few seconds you will see queries
-start to appear in the status bar. <br>[Note: TMN requests are sent to search
-engines just like 'real' requests, and so will end up in any history
-kept by the site, e.g., Google's 'search-history' function<Br>
-<li>To disable display of queries in the status bar, view the query log, or to
-adjust other options, select 'TrackMeNot->Options' in the Firefox 'Tools'
-menu.
-<li>To turn TMN off, locate 'TrackMeNot->Enabled' in the Firefox 'Tools' menu
-& uncheck it.</ul>
+<ul>
+<li>Click the 'Install TrackMeNot' link and then click 'Allow' or 'Install' in the dialog for your browser.
+<li>To adjust TMN's display, enable/disable specific features, view the query log, or
+adjust other options, click the TMN icon and select 'Options' in the menu.
+</ul>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="upgrade"></a>
 <h2>How do I upgrade to the current version of TrackMeNot?</h2>
 <ul>
-<li> Firefox's extension manager will alert you when TrackMeNot is updated,
+<li> The browser's extension manager should alert you when TrackMeNot is updated,
 and prompt you to install the upgrade.
 <li>If you've disabled this function or want to do a manual upgrade,
 simply follow the install instructions above.</ul>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
-<a name="remove"></a>
-<h2>How do I remove TrackMeNot?</h2>
-<ul><li>To remove TrackMeNot from your system, click
- 'Tools->Extensions' in the Firefox menu and launch the
-extension manager.
-<li>Select TrackMeNot from the list of installed extensions,
-then click the 'Uninstall' button.
-<li>Restart Firefox to complete the uninstall.</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
-
 <a name="freq"></a>
 <h2>Can I control the rate at which TMN sends queries? </h2>
-Yes. Go to 'Tools->TrackMeNot->Options' and select an average frequency.
+Yes. Go to 'TrackMeNot->Options' and select an average frequency.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 
 <a name="engines"></a>
 <h2>Can I choose the search engines that TMN queries?</h2>
-Yes. Go to 'Tools->TrackMeNot->Search-Engines' and select one or more
+Yes. Go to 'TrackMeNot->Search-Engines' and select one or more
 search-engines to query.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
@@ -256,21 +210,18 @@ search-engines to query.
 
 Yes, but not directly. TMN currently uses RSS feeds to generate its initial
 set of queries. This listed can be edited, in the options panel
-('Tools->Options->RSS Feeds'), by typing or pasting in the new
-(comma-delimited) list, then pushing the validate button.
+('TrackMeNot->Options->RSS Feeds'), by typing or pasting in new
+(comma-delimited) entries to the list, then pushing the 'validate' button.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="filter"></a>
-<h2>Isn't it easy for search companies (or third parties) to filter out TMN
+<h2>Isn't it easy for search companies (or 3rd-parties) to filter out TMN
 queries?</h2>
 The answer here is not straightforward; even with dynamically
-evolving query sets and burst-mode timing, there are data-mining and machine-learning techniques which may well be able to filter some TMN queries based on data
-patterns obtained from actual users. However, with the combination of
-randomized scheduling and query lengths, inclusion of changing terms from RSS
-feeds, and evolving query sets, we believe the difficulty for 3rd parties wishing to aggregate such data into accurate or identifying profiles is significantly
-increased.
+evolving query sets and burst-mode timing, there are data-mining and machine-learning techniques which may well be able to filter TMN queries based on data patterns obtained from actual users. However, with the combination of
+randomized scheduling and query lengths, inclusion of changing terms from RSS feeds, and evolving query sets, we believe the difficulty for 3rd-parties is significantly increased.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>
@@ -279,24 +230,19 @@ Back to main page</a><br>&nbsp;<br>
 <a name="identity"></a>
 <h2>Can TMN effectively hide my identity?</h2>
 To the extent that a third-party tries to identify you through searches
-alone, TMN can potentially make this a lot more difficult. Much depends on the
-search query terms included in future versions of TMN. If third-parties are using other means to identify you, e.g. through IP addresses and information from your ISP, TMN will be of little use.
+alone, TMN can potentially make this more difficult. Much depends on the
+search query terms included. If third-parties are using other means to identify you,
+e.g. through IP address, browser fingerprinting, or information from your ISP, TMN will be of little use.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
-
-<a name="mining"></a>
-<h2>Can TMN prevent mining and profiling of my searches?</h2>
-This is a potentially promising application of TMN, particularly with version
-0.4.x's use of dynamically evolving query terms.<p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="history"></a>
 <h2>Isn't it a good thing that search companies keep track of my search
 history?</h2>
-In a perfect world, where search companies and other third parties could be
+In a perfect world, where search companies and other 3rd-parties could be
 trusted, such histories would serve all of us well and promise greater
-functionality to both the companies and individual searchers. As long as
-search companies and other information collectors unilaterally develop and
+functionality to both companies and individual searchers. However, as long as
+search companies and other trackers unilaterally develop and
 pursue policies that don't take seriously the interests of individuals,
 society, and standing political and social values, individuals will have to
 make a choice between convenience and privacy.
@@ -307,13 +253,11 @@ make a choice between convenience and privacy.
 <a name="control"></a>
 <h2>Why is TMN so concerned with keeping control in the hands of individual users; as opposed to other strategies which use 3rd party servers/proxies?</h2>
 The larger intention of TMN is to challenge the current practice of search
-companies, and other third-parties, of unilaterally setting  policies on the
+companies, and other 3rd-parties, of unilaterally setting  policies on the
 collection and use of personal information.
 We think users should have a say; we think search
 companies should listen. To level the playing field, we have sought to create
-a mechanism that places some degree of control back in the hands of users and,
-at every point in the design where this has been feasible, we have sought to
-do so.
+a mechanism that places some degree of control back in the hands of users.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
@@ -336,10 +280,11 @@ engines it queries? </h2>
 TMN no doubt places some  additional load on search engines (though TMN requests are tiny compared with other types of web-traffic --  e.g. images, animations,
 music, video, etc.).  How much and how serious the impact will depend on the
 number of users and their use patterns.  Our intention (and expectation) with
-TMN is that its effect on search engines be minimal.  Further, universal
-deployment of TMN is not a  goal of the project. Rather, we hope to offer a
-level of  protection to individuals who may feel threatened by the practices
-of search engines, and perhaps even to afford such users a small voice in the emerging debate on such practices.
+TMN is that its effect on search engines will be minimal.  Further, universal
+deployment of TMN is not a goal of the project. Rather, we hope to offer a
+level of protection to individuals who may feel threatened by the practices
+of search engines, and to afford such users a small voice in the
+emerging debate on such practices.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
@@ -347,15 +292,15 @@ of search engines, and perhaps even to afford such users a small voice in the em
 <h2> Does TMN ever simulate click-throughs on links that come up from "fake"
 searches? </h2>
 
-TMN now selectively "clicks-through" on links available in simulated searches.  The click-through algorithm is designed to minimize the possibility of
-clicking on revenue-generating ads to avoid impacting ad-based business practices.
+Yes, TMN selectively "clicks-through" on links returned from its simulated searches.
+
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="guarantee"></a>
 <h2> What kind of guarantees can TMN make regarding its effectiveness at
 protecting my privacy? </h2>
 
-We can make no guarantees without further evaluation measures, however, we believe that search companies may need to go to considerable trouble to separate user-generated from TMN-generated searches. Further, any such filtering efforts are likely to contain some number of 'false-positives'.
+We can make no hard guarantees without further evaluation measures; however, we believe that search companies may need to go to considerable trouble to separate user-generated from TMN-generated searches. Further, any such filtering efforts are likely to contain some number of false positives.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 <a name="feedback"></a>
@@ -370,14 +315,13 @@ able to respond to.
 <a name="random"></a>
 <h2> How random is TMN's random timing mechanism. Isn't it likely that a search
 engine (using the massive amount of user data they've already collected) could
-distinguish 'any' random mechanism from real user search behavior? </h2>
+distinguish any randomomized mechanism from real user search behavior? </h2>
 
 With sufficient time and resources, search companies could likely detect a
 majority of TMN searches with some certainty. We are continuously improving
-TMNs timing mechanism to mimic, more closely, real usage patterns. New
-releases of TMN (> v05) contain a 'burst' mechanism which schedules TMN
-queries primarily when users are actually searching, thus avoiding 'patterns' in
-TMN's randomness.
+TMNs timing mechanism to mimic, more closely, real usage patterns. One example
+of this is 'burst mode' which schedules TMN queries primarily when users are
+actually searching, thus avoiding 'patterns' in TMN's randomness.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
@@ -389,7 +333,7 @@ In providing a way for individual users to assert their privacy rights in
 web-search, we believe TMN is a legitimate use of network and computing
 resources. Although we understand that critics may use such rhetoric to cast
 doubt on our efforts and intentions, we are confident that by all common
-understandings, TMN is neither DOSware nor spamware. Here are definitions from
+understandings, TMN is neither DDoSware nor spamware. Here are definitions from
 Wikipedia.
 
 <p>
@@ -409,12 +353,6 @@ inconsistent with the purpose of the indexing system." (Wikipedia, March 29
 2007)
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
-<a name="clickfraud"></a>
-<h2> Does the selective click-through feature contribute to advertising "click-fraud"? </h2>
-
-The selective click-through system is designed to minimize the probability of clicking on revenue-generating ads.  Search engines currently format ad-related links in a relatively consistent manner and TMN's current ad-avoiding techniques appear to be adequate for the time being.
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="response"></a>
 <h2> How have the search engine companies responded to this project? </h2>
@@ -432,11 +370,9 @@ goals of TMN.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="browsers"></a>
-<h2> I would love to use TrackMeNot; why doesn't it work with browsers other
-than Firefox? </h2>
+<h2> I would love to use TrackMeNot; why doesn't it work with browser X? </h2>
 
-Our resources are limited but we would be happy to collaborate with others who
-would like to develop TMN for other browsers.
+As an open-source, academic research project, our resources are limited. However we would be happy to collaborate with those interested in developing TMN for other browsers.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="lang"></a>
@@ -475,33 +411,21 @@ to work well) and enable 'burst-mode.' This not only alleviates the strain on
 search engines that TMN might be causing, and allows you to avoid the
 CAPTCHAs, but also better mimics real human activity.
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
-
-<a name="sourcequeries"></a>
-<h2>Where does TrackMeNot get its queries from?
-</h2>
-The queries that TrackMeNot uses are compiled from the top searches listed on Google Zeitgeist,
-Lycos 50, and other services. On the option page, by clicking "Show Queries"
-you can see the queries.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="stealthandtabmodes"></a>
-<h2>What is the difference between stealth and tab modes?
+<h2>What is the difference between 'stealth' and 'tab' modes?
 </h2>
-Stealth mode runs the queries in the background of your browser at the given rate you select.
-You will not see these queries being made unless you click the "Show logs" which will display the background queries.
-
+Stealth mode issues TMN queries in the background of your browser (via XHR requests) at the given average rate you select. You will not see these queries being made unless you click the "Show logs" button in the options. In tab-mode, queries are run in a dedicated browser tab that can be inspected by users. Generally-speaking, we recommend tab-mode as it exactly mimics the format of user-initiated queries, however some users may find the extra tab to be distracting, and may thus prefer to use stealth mode.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 <a name="burst"></a>
-<h2>What is burst mode?
+<h2>What is 'burst mode'?
 </h2>
-Burst mode sends out searches while you are actively searching yourself.
-This mode helps to further reduce the patterns that form when TMN is working so that search engines
-do not pick up on TMNs standard query timing.
-
+Burst mode sends out batches of queries searches to a specific engine when the user is actively searching on that engine. This mode helps to further reduce the patterns that may form when TMN is working so that search engines
+do not pick up on TMN's query timing.
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
@@ -520,15 +444,10 @@ below.
 <ul>
 
 <li>To add a search engine, go to the website of the search engine you want add.</li>
-
 <li>Then search "TrackMeNot" in the search box.</li>
-
 <li>When the search is loaded, copy the link that in your browser.</li>
-
 <li>Then go back to the TrackMeNot option's page find the "Search Engines" section.</li>
-
 <li>Click the "+" icon</li>
-
 <li>And, paste in the URL you have copied from your preferred search engine and TMN will validate it.</li>
 
 </ul>
@@ -538,78 +457,42 @@ below.
 <a name="dhs"></a>
 <h2>What does 'keywords monitored by DHS' mean?</a>
 </h2>
-The Department of Homeland Security released
+The U.S. Department of Homeland Security (DHS) released
 <a href="http://www.dailymail.co.uk/news/article-2150281/REVEALED-Hundreds-words-avoid-using-online-dont-want-government-spying-you.html" target="_blank">
-(See Article Here)
+(see article here)
 </a>
-  a list of keywords
-and phrases that they follow as potential signs of terrorist or other
-threats against the U.S. For that reason, TMN uses this list as terms for TMN to avoid.
-You have the option to change this setting if you prefer.
-
+  a list phrases they track as potential signs of cirminal or terrorist activity against the U.S. For that reason, TMN uses this list as terms for TMN to avoid. You have the option to change this setting if you prefer.
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
 
 <a name="blacklist"></a>
-<h2>What is the blacklist?
+<h2>What if I don't want certain words to ever be searched? What is TMN's 'blacklist' ?
 </h2>
 
-The blacklist is a list of words that a user can choose or choose not to leave out of the queries that TMN uses.
+The blacklist is a user-provided list of words that will never be searched by TMN.
 <ul>
-<li>To add to the blacklist, simply add a comma separating every word you want to add to the list.</li>
+<li>To add to the blacklist, simply add a comma separating every word or phrase you want in the list.</li>
 </ul>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
-
-<h2>Can you explain each of TMN's features?</h2>
-<a name="features"></a>
+<h2>Can you explain the various options/features that TMN provides?</h2>
+<a name="options"></a>
 <ul>
 
-<li><h3>RSS Support for seed-list generation/substitution (since 0.6.x)</h3>
-	TMN now parses RSS feeds to generate some portion of its initial query
-terms.  Following generation of the initial seed-list of query terms, TMN will
-occasionally query a randomly selected RSS feed to get new terms.  A default
-set of RSS feeds is provided with TMN, and users may edit and add new feeds in the TMN options panel.
-
-<li><h3>Selective Click-Through(since 0.6.x)</h3>
-	TMN now 'clicks-through' on some percentage of its searches by selecting and
-navigating to links received in the search result to further simulate user
-behavior.  The click-through mechanism is designed to minimize the probability of clicking on revenue-generating ads.
-
-<li><h3>Realtime Search-Tracking</h3>
-   TMN now recognizes when a 'real' search is being performed by a user
-and can act on this information in a variety of ways (see below).
-
-<li><h3>Dynamic URLs/Header Matching</h3>
-   TMN now keeps track of where (for each search engine) you've last
-searched and uses that URL to send its queries (for example, if you start
-using the Google toolbar rather than Google's webpage, TMN will update itself to do the same). Similarly, TMN now stores the header information your browser is
-sending out (browser type, version, OS, etc.) and mimics these in its own
-queries.
-
 <li><h3>Dynamic Queries </h3>
-As of version 0.4.x, TMN's static word list has been replaced with a dynamic
+TMN's employs a dynamic
 query mechanism which 'evolves' each client (uniquely) over time, parsing the
 results of its searches for 'logical' future query terms with which to replace
 those already used.<p> Note: since the query list is continually evolving
 according to TMN algorithms, changes made by hand-editing this file will be
-overwritten. We hope to support user-supplied query lists in future versions.
-</ul>
+overwritten.
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
 
-<h2>Can you explain the various options that TMN supports?</h2>
-<a name="options"></a>
-<ul>
-
-<li><h3>Burst-Mode</h3>
-   Rather than sending queries only at randomized intervals, TMN (in burst-mode) recognizes when the user performs a search, then sends a 'burst' of queries
-over the next few moments to simulate actual user behavior.  As of version 0.6.x, burst-mode further mimics user behavior by selecting longer queries and permuting them to form a number of smaller "thematic" queries.
-
-<li><h3>Current Queries </h3>
-This button allows the user to view the current state of TMN's evolving
-query-list (see above for <a href="#features">description</a>).
+<li><h3>Click Through</h3>
+	TMN now 'clicks-through' on some percentage of its searches by selecting and
+navigating to links received in the search result to further simulate user
+behavior.
 
 <li><h3>RSS-feeds</h3>
 TMN parses RSS feeds in two cases: a) to generate some portion of its initial
@@ -620,10 +503,14 @@ so, change the text in the RSS text field (in the options panel), then click
 the 'Validate' button. To revert back to the default set of feeds, click the
 'Use Defaults' button in the options panel.
 
+<li><h3>Current Queries </h3>
+This button allows the user to view the current state of TMN's evolving
+query-list (see below for description).
+
 <li><h3>Logging Options </h3>
 TMN offers 3 modes for logging: 1) 'disabled' - no logs are written, 2)
   'normal' (no options checked) - logs are kept for each session and then
-deleted when Firefox is closed, and 3) 'persistent' - each session is appended
+deleted when the browser is closed, and 3) 'persistent' - each session is appended
 to the log which remains indefinately (Note: although TMN logs are not large,
 the user might want to occasionally clear them (via te 'Clear Log' button when using this mode).
 
@@ -636,13 +523,28 @@ the browser window will keep this view current); The 'Clear Log' button, will
 <li><h3>Logging Options</h3>
 TMN offers 3 modes for logging: 1) 'disabled' - no logs are written, 2)
   'normal' (no options checked) - logs are kept for each session and then
-deleted when Firefox is closed, and 3) 'persistent' - each session is appended
+deleted when the browser is closed, and 3) 'persistent' - each session is appended
 to the log which remains indefinately (Note: although TMN logs are not large,
 the user is responsible for occasionally clearing them in this mode).
 
 <li><h3>Show Status/Queries</h3>
 These checkboxes control TMN's status bar -- if 'Show Queries' is unchecked,
 TMN queries are not displayed as they are sent; if 'Show Status' is unchecked, no messages are displayed in the status bar at all.
+
+<li><h3>Burst Mode</h3>
+   Rather than sending queries only at randomized intervals, TMN (in burst-mode) recognizes when the user performs a search, then sends a 'burst' of queries
+over the next few moments to simulate actual user behavior.  As of version 0.6.x, burst-mode further mimics user behavior by selecting longer queries and permuting them to form a number of smaller "thematic" queries.
+
+<li><h3>Realtime Search-Tracking</h3>
+   TMN recognizes when a 'real' search is being performed by a user
+and acts on this information in a variety of ways (see below).
+
+<li><h3>Dynamic URLs/Header Matching</h3>
+   TMN now keeps track of where (for each search engine) you've last
+searched and uses that URL to send its queries (for example, if you start
+using the Google toolbar rather than Google's webpage, TMN will update itself to do the same).
+Similarly, TMN stores the header information your browser is sending out (browser type, version, OS, etc.)
+and mimics these in its own queries.
 
 </ul>
 
