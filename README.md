@@ -1,4 +1,1 @@
-TrackMeNot-Chrome
-=================
-
-TrackMeNot portage on Chrome
+## TrackMeNot website only (not the application)
